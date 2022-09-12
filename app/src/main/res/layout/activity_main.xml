@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="13dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="13dp"
+    tools:context="com.ltl.mpmplab2_1.MainActivity">
+
+    <TextView
+    android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change images" />
+    <ImageView
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_account_circle_black_48dp"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+    <CheckBox
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account circle"
+        android:id="@+id/checkBox"
+        android:checked="true"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignEnd="@+id/imageView"
+        android:onClick="checkImage"/>
+    <CheckBox
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adjust black"
+        android:id="@+id/checkBox2"
+        android:checked="false"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignRight="@+id/imageView"
+        android:onClick="checkImage"/>
+    <CheckBox
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm on black"
+        android:id="@+id/checkBox3"
+        android:checked="false"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignRight="@+id/imageView"
+        android:onClick="checkImage"/>
+    <CheckBox
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assistant black"
+        android:id="@+id/checkBox4"
+        android:checked="false"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignRight="@+id/imageView"
+        android:onClick="checkImage"/>
+    <CheckBox
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brihtness"
+        android:id="@+id/checkBox5"
+        android:checked="false"
+        android:layout_below="@+id/checkBox4"
+        android:layout_alignRight="@+id/imageView"
+        android:onClick="checkImage"/>
+    <TableRow
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+    <TableRow
+    android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+    android:id="@+id/button"
+        android:text="Change image"
+        android:layout_below="@+id/checkBox5"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_column="25"
+        android:layout_gravity="center_horizontal" />
+    </TableRow>
+
+</TableLayout>
